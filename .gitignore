@@ -1,3 +1,8 @@
+## Main pdf
+report.pdf
+Report.pdf
+tmp*
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -9,7 +14,6 @@
 
 ## Intermediate documents:
 *.dvi
-*-converted-to.*
 # these rules might exclude image files for figures etc.
 # *.ps
 # *.eps
@@ -21,12 +25,10 @@
 *.blg
 *-blx.aux
 *-blx.bib
-*.brf
 *.run.xml
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
-*.synctex
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
@@ -37,9 +39,6 @@
 *.alg
 *.loa
 
-# achemso
-acs-*.bib
-
 # amsthm
 *.thm
 
@@ -48,21 +47,6 @@ acs-*.bib
 *.snm
 *.vrb
 
-#(e)ledmac/(e)ledpar
-*.end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
-
 # glossaries
 *.acn
 *.acr
@@ -70,16 +54,8 @@ acs-*.bib
 *.glo
 *.gls
 
-# gnuplottex
-*-gnuplottex-*
-
 # hyperref
 *.brf
-
-# knitr
-*-concordance.tex
-*.tikz
-*-tikzDictionary
 
 # listings
 *.lol
@@ -96,11 +72,7 @@ acs-*.bib
 *.mtc0
 
 # minted
-_minted*
 *.pyg
-
-# morewrites
-*.mw
 
 # nomencl
 *.nlo
@@ -120,7 +92,6 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
-
-# WinEdt
+graphics/Thumbs.db
+Images/Thumbs.db
 *.bak
-*.sav

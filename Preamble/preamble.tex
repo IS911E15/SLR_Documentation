@@ -1,0 +1,46 @@
+\documentclass[a4paper,11pt,fleqn,twoside,openright]{memoir} % Brug openright hvis chapters skal starte på højresider; openany, oneside
+
+\include{Preamble/usepackages}
+
+\include{Preamble/listings}
+
+\include{Preamble/chaptersettings}
+
+\include{Preamble/addendumsettings}
+
+\include{Preamble/pagesetup}
+
+\include{Preamble/header}
+
+\include{Preamble/footer}
+
+\include{Preamble/userdefinedcommands}
+
+\include{Preamble/todosettings}
+
+\include{Preamble/tikz}
+
+\raggedbottom
+
+\pagestyle{custom}
+
+\let\newfloat\relax 	
+% Memoir har allerede defineret denne, men det gør float pakken også
+
+\makenomenclature		
+\bibliographystyle{plainnat}
+% Nomenklaturliste
+
+\makeatletter
+\let\totalpages\relax
+\newcounter{mypage}
+\EveryShipout{\stepcounter{mypage}}
+\AtEndDocument{\clearpage
+   \immediate\write\@auxout{%
+    \string\gdef\string\totalpages{\themypage}}}
+\makeatother
+
+%\pdfoptionpdfminorversion=6	
+% Muliggør inkludering af pdf dokumenter, af version 1.6 og højere
+
+\hyphenation{}

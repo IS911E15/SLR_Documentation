@@ -1,0 +1,36 @@
+%%% Code snippets %%%
+\newenvironment{code}[2]
+{\def\fooNoI{#1} \def\fooNoII{#2}\noindent\newline \begin{minipage}{\textwidth}\begin{mdframed}[style=RoundStyle]}{\end{mdframed}\lstcapt{\fooNoII}\label{\fooNoI}\end{minipage}}
+
+\newcommand{\kode}[3]{
+	\noindent
+	\newline
+	\newline
+	\begin{minipage}{\textwidth}
+		\begin{mdframed}
+			\lstinputlisting{kode/#3}
+			
+		\end{mdframed}\lstcapt{#1}\label{lst:#2}
+	\end{minipage}
+}
+
+%%% Images / Figures %%%
+\newcommand{\image}[4]{
+	\begin{figure}[H] 
+		\centering
+		\includegraphics[width=#2\textwidth]{#1}
+		\caption{#3}\label{#4}
+	\end{figure} 
+}
+
+
+%%% Math %%%
+\newcommand{\Tau}{\mathrm{T}}
+
+\newcommand{\eps}{\varepsilon}
+
+\newcommand{\vektor}[3]{
+	$\begin{pmatrix}
+	#1 \\ #2 \\ #3
+	\end{pmatrix}$
+}

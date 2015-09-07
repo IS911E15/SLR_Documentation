@@ -1,0 +1,106 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 20:21:26 mar 16, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 9:49:02 maj 13, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+
+/* CONTACT US BOX */
+#contactbox {
+  width: 190px;
+  margin-left: 2px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: #f0f0f0;
+  border-bottom: 2px solid #bcbabd;
+}
+
+#contactbox #contactus {
+  background-color: #f0f0f0;
+}
+
+#contactbox #contactus h2.contacthdr {
+  width: 170px;
+  font-size: 1.1em;
+  color: #ffffff;
+  background: #bfbfbf;
+  padding: 8px 10px;
+  margin: 0 auto;
+}
+
+/* for specialreport_agility.jsp page */
+h2.contacthdr2 {
+  width: 190px;
+  font-size: 1.1em;
+  color: #ffffff;
+  background: #bfbfbf;
+  padding: 8px 10px;
+  margin: 0 auto;
+}
+
+#fa_body #faShell #rightprm #contactbox {
+  width: 190px;
+  margin-left: 2px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: #f0f0f0;
+  border-bottom: 2px solid #bcbabd;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+}
+#fa_body #faShell #rightprm #contactbox #contactus h2.contacthdr {
+  width: 170px;
+  font-family: Verdana, Arial, Helvetica, Sans-Serif;
+  font-size: 1em;
+  color: #ffffff;
+  background: #bfbfbf;
+  padding: 8px 10px;
+  margin: 0 auto;
+  text-transform: none;
+}
+
+#fa_body #faShell #rightprm ul.contactul li {
+	font-size: .9em;
+}
+
+#contactbox #contactus #contactmodule {
+  border: 0;
+  margin: 0;
+  padding: 0 25px 10px;
+  background: #f0f0f0;
+  border-bottom: 2px solid #ffffff;
+}
+
+#contactbox #contactus #contactmodule ul.contactul {
+  list-style: none;
+  margin: 14px 0;
+  padding: 0;
+  padding-left: 10px;
+  border: 0;
+}
+
+#contactbox #contactus #contactmodule ul.contactul li {
+  color: #666666;
+  margin: 0 -100px 0 -23px;
+  padding: 0;
+  border: 0;
+}
+
+#contactbox #contactus #contactmodule ul.contactul li a {
+  color: #3088CC;
+  text-decoration: none;
+}
+
+#contactbox #contactus #contactmodule ul.contactul li a:hover {
+  color: #3088CC;
+  text-decoration: underline;
+}
+/* end contact us */

@@ -1,0 +1,55 @@
+\section{Application}
+%Current State:
+An Android application was developed in this project to address the challenges stated in \Cref{chap:intro}. The first challenge was expressed as the following question:
+
+%Q1: 
+\begin{center}
+\textit{How can we provide music with an appropriate tempo, compared to the current pace, to the runner through the use of a smartphone?}
+\end{center}
+
+It was found that it is possible to create an application consisting of several modules working together to achieve the desired result, i.e. an application that plays back music that matches the user's pace:
+
+\begin{itemize}
+\item \textbf{Music Player}: This module is the core of the application, responsible for playing the desired music. Using a GUI it is possible to navigate through a playlist manually, and with a combination of the built-in dynamic queue and the step counter module, it can automatically play back songs that match the user's running (or walking) pace.
+\item \textbf{Song Scanner}: The song scanner is responsible for locating music on the device and maintaining a music library.
+\item \textbf{Step Counter}: This module uses the device's sensors to calculate the user's steps per minute.
+\end{itemize}
+
+The user is expected to use the application while running, and in addition to the functionality, it would be advantageous to be able to control the application while using for its intended purpose. That requirement led to the second question:
+
+\begin{center}
+\textit{How can a smartphone application be operated without disrupting the runner's form and/or concentration?}
+\end{center}
+
+This was achieved by creating a non-graphical user interface, allowing the user to tap the screen, when it is turned off, to control the music player: play, pause, next, previous.
+
+
+\subsection{Future Work}
+In its current state, the application fulfils the requirements stated by the questions, but as with most software there are improvements to make. Some possible improvements are:
+
+\paragraph{Better Flow}
+Because each module was mainly developed on its own, some problems exist with their interfaces.
+For example, the step counter measures the user's pace, but the dynamic queue does not update the queue quickly enough, so the application only works optimally when running at a constant speed.
+Additionally, the application currently starts playing when the play button is clicked, instead of when the user starts running, thereby not matching the music to the running pace immediately.
+These problems could be solved by implementing a smooth transition to a new song when the pace is changed.
+
+\paragraph{Manipulation of Music Tempo}
+To help the application cope with minor changes in pace, the tempo of the song could be changed to match the new pace more precisely. Implementing this change requires a lot of knowledge to not distort the music.
+
+\paragraph{GUI Improvements}
+Many improvements can be made for the GUI, as relatively little focus was put on this aspect of the application. One of the most notable things that would benefit from an improvement is button placement. Especially because the application is meant to be used on the go, it would be an advantage to place the buttons in a way that minimises the risk of clicking a button unintentionally.
+
+\paragraph{NGUI Improvements}
+The current implementation of the NGUI could be improved by adding support for headphones with built-in buttons, and let the user use them to interact, just as with the screen.
+
+\paragraph{Training Programs}
+Using music to steer the user's pace, rather than the other way around, could be a way to create training programs.
+These programs could be interval training, with musical indications of when to speed up and slow down, or it could be possible to use the tempo of a song to challenge the user to run just a little bit faster.
+
+\paragraph{Integration with Other Services}
+Integrating the application with for example a streaming music service would allow having access to more music with less hassle. Allowing the user to pick out some specific genres or even individual tracks would improve the experience even more.
+
+\paragraph{Polishing Existing Features}
+Many current features can be improved.
+For example it could be made possible for the user to input the BPM of songs with missing data.
+An idea that would provide more features with minimal programming could be to add an option to use the step counter and music player on their own, i.e., let the step counter output a count of total steps instead of only steps per minute, and allow using the music player with a traditional play list.

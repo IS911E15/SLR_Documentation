@@ -1,0 +1,36 @@
+\newcommand{\namedtodo}[5]
+{
+  \ifthenelse{\equal{#1}{}}
+  {
+    \todo[backgroundcolor=#4,caption=
+    {\textbf{#3: } #2}
+    ,inline]
+    {\color{#5}\textbf{#3: }#2}
+  }
+  {
+    \todo[backgroundcolor=#4,caption=
+    {\textbf{#3: } #1}
+    ,inline]
+    {\color{#5}\textbf{#3: }#2}
+  }
+}
+
+\newcommand{\story}[4]{
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{>{\hsize=.4\hsize}l X}
+\noindent \textsc{Title:} & #1\\
+\noindent \textsc{Priority:} & #2\\
+\noindent \textsc{Story:} & #3\\\\
+\noindent \textsc{\parbox[t]{2cm}{Acceptance\\Criteria:}} & \vspace{-7mm} #4\\
+\end{tabularx}
+\end{table}
+}
+
+\newcommand{\Alexander}[2][]{\namedtodo{#1}{#2}{Alexander}{green}{black}}
+\newcommand{\Dan}[2][]{\namedtodo{#1}{#2}{Dan}{blue!80}{white}}
+\newcommand{\John}[2][]{\namedtodo{#1}{#2}{John}{black!10!red!90}{white}}
+
+
+\makeatletter \renewcommand \listoftodos{\section*{List of Todos} \@starttoc{tdo}}
+\renewcommand\l@todo[2]
+  {\par\noindent \textit{#2}, \parbox{\textwidth}{#1}\par} \makeatother

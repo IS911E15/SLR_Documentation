@@ -1,0 +1,66 @@
+%%% Indholdsfortegnelse %%%
+\setsecnumdepth{subsubsection}
+% Dybden af nummerede overkrifter (part/chapter/section/subsection)
+
+\maxsecnumdepth{subsubsection}
+% Ændring af dokumentklassens grænse for nummereringsdybde
+
+\settocdepth{section}
+% Dybden af indholdsfortegnelsen
+
+\hypersetup{pdfborder = 0 0 0}	% Fjerner ramme omkring links i fx indholdsfotegnelsen og ved kildehenvisninger 
+\hypersetup{			%Opsætning af farvede hyperlinks
+	colorlinks = false,
+	linkcolor = black,
+	anchorcolor = black,
+	citecolor = black
+}
+
+
+%%% Litteraturlisten %%%
+%\bibpunct[,]{[}{]}{;}{a}{,}{,} 	% Definerer de 6 parametre ved Harvard henvisning (bl.a. parantestype og seperatortegn)
+%\bibliographystyle{bibtex/harvard}	% Udseende af litteraturlisten. Ligner dk-apali - mvh Klein
+
+
+
+
+%%% Preface %%%
+\newcommand{\doublesignaturestart}[2]{%
+	\parbox{\textwidth}{
+		\centering Aalborg, \today\\
+		\vspace{2cm}
+		
+		\parbox{7cm}{
+			\centering
+			\rule{6cm}{1pt}\\
+			#1 
+		}
+		\hfill
+		\parbox{7cm}{
+			\centering
+			\rule{6cm}{1pt}\\
+			#2
+		}
+	}
+}
+
+\newcommand{\doublesignature}[2]{%
+	\parbox{\textwidth}{
+		\vspace{2cm}
+		\parbox{7cm}{
+			\centering
+			\rule{6cm}{1pt}\\
+			#1 
+		}
+		\hfill
+		\parbox{7cm}{
+			\centering
+			\rule{6cm}{1pt}\\
+			#2
+		}
+	}
+}
+
+
+
+

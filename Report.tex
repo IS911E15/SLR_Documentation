@@ -1,0 +1,68 @@
+\input{Preamble/preamble}
+
+\begin{document}
+
+% Forindhold - nummereres med romertal
+\frontmatter 
+\input{Addendum/FrontPage/frontpage}
+\cleardoublepage
+\input{Addendum/TitlePage/titlepage}
+\cleardoublepage
+\input{Addendum/Preface/preface}
+\cleardoublepage
+\input{Addendum/TableOfContents/tableOfContents}
+
+ % Hovedindhold - nummereres fra side 1
+\mainmatter
+
+\input{Addendum/FooterSetup/footerSetup}
+
+% Rapportindhold
+\chapter{Introduction}
+\label{chap:intro}
+\input{Content/Introduction/introduction}
+
+\chapter{Protocol}
+\label{chap:intro}
+\input{Content/Protocol/Protocol}
+
+\chapter{Search Results}
+\label{chap:intro}
+\input{Content/SearchResults/SearchResults}
+
+\chapter{Data Extraction}
+\label{chap:intro}
+\input{Content/DataExtraction/DataExtraction}
+
+\chapter{Conclusion}
+\label{chap:conclusion}
+
+%\clearforchapter
+\appendix	% Appendiks/bilag start - giver chapter bogstaver i stedet for talf
+\addtocontents{toc}{\protect\cftpagenumbersoff{chapter}} % Fjernelse af nummerering af bilag i TOC
+\settocdepth{chapter}	% Sætter dybden af indholdsfortegnelsen til chapter for bilagene
+
+%%%% Appendiks %%%%
+\clearforchapter
+\begin{vplace}[0.7]
+\begin{center}
+\Huge \textbf{Appendix}
+\end{center}
+\end{vplace}
+\input{Appendix/appendix}
+
+
+
+\bibliography{Bibliography/bibliography}
+
+
+%\input{Appendix/appendixDVD}
+
+
+
+%%% DELETE BEFORE FINAL %%%
+\chapter{Examples \& ToDo}
+\input{PreamblePreview/preamblePreview}
+\clearpage
+\listoftodos
+\end{document}

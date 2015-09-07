@@ -1,0 +1,33 @@
+%%% Sidehoved %%%
+\makepagestyle{custom} 
+% Definerer sidehoved og sidefod - kan modificeres efter ønske
+
+\makepsmarks{custom}{																						
+\def\chaptermark##1{
+			\ifthenelse{\equal{##1}{Preface}}
+				{\markboth{\itshape ##1}{}}
+				{\markboth{\itshape\thechapter. ##1}{}}
+			} 
+% Henter kapitlet den pågældende side hører under med kommandoen \leftmark. \itshape gør teksten kursiv
+
+\def\sectionmark##1{\markright{\thesection. ##1}{}}	
+% Henter afsnittet den pågældende side hører under med kommandoen \rightmark
+
+} 
+% Sidetallet skrives med kommandoen \thepage	
+
+\makeevenhead{custom}{\leftmark}{}{Group SW802F15} 
+% Definerer lige siders sidehoved efter modellen \makeevenhead{Navn}{Venstre}{Center}{Højre}
+
+\makeoddhead{custom}{Group SW802F15}{}{\leftmark} 
+% Definerer ulige siders sidehoved efter modellen \makeoddhead{Navn}{Venstre}{Center}{Højre}
+
+
+\copypagestyle{nychapter}{custom} 
+
+% Følgende linier sørger for, at sidehovedet ikke understreges på kapitlets første side
+\makeoddhead{nychapter}{Group SW802F15}{}{\leftmark}
+\makeevenhead{nychapter}{Group SW802F15}{}{\leftmark}
+\makeheadrule{nychapter}{\textwidth}{0pt}
+\aliaspagestyle{chapter}{nychapter}
+\aliaspagestyle{cleared}{custom}
