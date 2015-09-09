@@ -1,34 +1,84 @@
+This chapter will describe how we intend to perform the Systematic Literature Review.
+This Systematic Literature Review consists of X steps. The steps are:
+\begin{enumerate}
+	\item Select search terms which will cover the literature proposed in the purpose.
+	\item Select which databases, in which, these search terms should be queried.
+	\item Develop screening parameters, which will determine if an article lives up to the requirements of this Systematic Literature Review.
+	\item ?
+\end{enumerate} 
+
+\section{Search Terms}
+Given the previously stated purpose, this search needs to be broad enough to give an overview of Lean Software Development, without including articles of standard Lean or other Development Methodologies. \Alexander{Standard Lean?} \Alexander{What is Lean Software Development? Development Methodology? Buisiness Strategy? Toolkit?}
+To achieve a broad range of results, we have selected the search terms: 
+Lean, 
+Software, 
+Software Development, 
+Software Engineering, 
+Systems Development, 
+Information Systems, 
+Information Systems Development, 
+and Information Systems Engineering.
+
+These search terms are combined to the following queries:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ l c l }
+		\tabitem Lean Software  & \hspace{1cm} & \tabitem Lean Information Systems \\ 
+		\tabitem Lean Software Development & \hspace{1cm} & \tabitem Lean Information Systems Development\\ 
+		\tabitem Lean Software Engineering & \hspace{1cm} & \tabitem Lean Information Systems Engineering\\ 
+		\tabitem Lean Systems Development & \hspace{1cm} & \\  
+	\end{tabular}
+\end{table} 
+\Alexander{We missed “Lean Systems Development” in the first SLR}
+\Alexander{Would Lean Software not cover all the articles found in the left lane? And the same for the right side with Lean IS?}
+
+\section{Databases}
+For this search to give an unbiased overview of Lean Software Development, the three best/largest literature databases was selected.
+
+ACM Digital Library, was selected because ... .
+
+IEEE Xplore Digital Library, was selected because ... .
+
+Web of Science, was selected because ... .
+
+Google Scholar was not selected due to the ineffective and non-customisable search function.
 
 
-\section{Searching} - Monday
-\subsection{Search Terms}
-
-\begin{itemize}
-	\item Lean+Software
-	\item Lean+"Software Development"
-	\item Lean+"Software Engineering"
-	\item Lean+"Information Systems"
-	\item Lean+"Information Systems Engineering"
-	\item Lean+"Information Systems Development"
-\end{itemize}
-
-\subsection{Databases}
-\begin{tabular}{|l|l|}
-	\hline \textbf{Database} & \textbf{Parameters} \\ 
-	\hline Web of Science & Research area: Computer Science \\ 
-	\hline ACM Digital Library &  Words or Phrases: Find Title/Abstract with \\
-	\hline IEEE Xplore Digital Library & Search in metadata only \\ 
-	\hline Google Scholar & Search in title only \\ 
-	\hline 
-\end{tabular} 
+\subsection{Query adaptation}
+Each of these databases handles queries differently. In \Cref{tabel:QueryExample} is a example of how each database is queried:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline \textbf{Database} & \textbf{Query Example} \\ 
+		\hline ACM Digital Library & Lean “Information Systems Development” \\
+		\hline IEEE Xplore Digital Library & (Lean (Information Systems Development)) \\ 
+		\hline Web of Science & Lean “Information Systems Development” \\ 
+		\hline 
+	\end{tabular}
+	\caption{Exaple of queries for each selected database.}
+	\label{tabel:QueryExample}
+\end{table}
+\Alexander{Is this the correct way to query ACM?}
+\Alexander{Is this the correct way to query Web of Science?}
 
 \subsection{Restrictions}
-Age of articles etc.
+To ensure a more precise search, each database have had some restriction imposed upon them.
 
+For the search of the ACM Digital Library database, the search is restricted to Title and Abstracts.
+This is done to prevent results including the word “lean” in the text, meaning thin and not the development methodology.
+However, this can exclude results which mentions Lean in comparison to other strategies without it being an integral part of the article.
 
+For the search of the IEEE Xplore Digital Library database, the search is restricted to metadata only.
+Metadata consists of title, abstract, ... ? ...
+The repercussions of this is similar to the restrictions of the ACM Digital Library database search.
+ 
+For the search of the Web of Science database, the search is restricted to the research areas “Computer Science” and “Engineering”.
+... something about these areas was the only on the list which made sense, but there could be more, hence excluding good results ...
 
 \section{Screening} - Tuesday
 \subsection{Practical screening - Inclusion}
+
+
 
 \subsection{Quality Appraisal - Exclusion}
 
